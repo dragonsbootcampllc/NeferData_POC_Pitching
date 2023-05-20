@@ -10,7 +10,7 @@ export const useServerTimeLoader = routeLoader$(() => {
 });
 
 export default component$(() => {
-  let nav_links: Tnav_links[] = [
+  const nav_links: Tnav_links[] = [
     {
       id: 1,
       name: "Tracks",
@@ -38,7 +38,7 @@ export default component$(() => {
     },
   ];
 
-  let Join: TJoin[] = [
+  const Join: TJoin[] = [
     {
       id: 1,
       name: "Join Us",

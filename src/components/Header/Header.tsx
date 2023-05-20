@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import "../../global.css";
 import { Link } from "@builder.io/qwik-city";
 // Create a new component by exporting a function.
-import { TJoin, Tnav_links } from "~/Types/Hero";
+import type { TJoin, Tnav_links } from "~/Types/Hero";
 export default component$((props: any) => {
   return (
     <div
@@ -15,6 +15,8 @@ export default component$((props: any) => {
             src="/Identity/test.svg"
             alt="logo"
             class={`${"w-[35px] h-[35px] "}`}
+            height={35}
+            width={35}
           />
         </div>
         <span class={`${" pt-[6px] text-xl text-gray-200"}${"select-none"}`}>

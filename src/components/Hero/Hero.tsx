@@ -2,9 +2,10 @@ import { component$, useStyles$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import { Image } from "@unpic/qwik";
 import Styles from "./Hero.css";
+import type { TNews } from "~/Types/News";
 
-export default component$((props) => {
-  let News = {
+export default component$(() => {
+  const News: TNews = {
     id: 1,
     date: "2020-01-01",
     content: "Our AI integration just landed💯",
