@@ -17,6 +17,26 @@
  *
  */
 
+@font-face {
+  font-family: "Poppins-Bold";
+  font-weight: 400;
+  src: url("../public/fonts/Poppins-SemiBold.ttf") format("truetype");
+
+  font-weight: 600;
+
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "interV";
+  font-weight: 300;
+  src: url("../public/fonts/Inter-Light.ttf") format("truetype");
+
+  font-style: normal;
+}
+
+
 :root {
   --qwik-dark-blue: #006ce9;
   --qwik-light-blue: #18b6f6;
@@ -44,3 +64,5 @@ body {
   line-height: inherit;
   background-color: var(--qwik-dark-purple);
 }
+
+
