@@ -4,6 +4,7 @@ import Hero from "~/components/Hero/Hero";
 import Brands from "~/components/Brands/Brands";
 import Video from "~/components/Video/Video";
 import Features from "~/components/Features/Features";
+import Feadback from "~/components/Feedback/Feadback";
 
 export default component$(() => {
   return (
@@ -12,6 +13,7 @@ export default component$(() => {
       <Brands />
       <Video />
       <Features />
+      <Feadback />
     </div>
   );
 });
