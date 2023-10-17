@@ -1,12 +1,16 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useStore } from "@builder.io/qwik";
 import "../../global.css";
 import { Link } from "@builder.io/qwik-city";
 // Create a new component by exporting a function.
 import type { TJoin, Tnav_links } from "~/Types/Hero";
+// @ts-ignore
+
 export default component$((props: any) => {
+  // on scroll change color react
+
   return (
     <div
-      class={`${"fixed w-full top-0 bg-blue-600/10  text-black h-[88px] grid-cols-3 place-items-center grid  backdrop-blur-2xl"}`}
+      class={`${"fixed w-full top-0  z-40 text-black h-[88px] grid-cols-3 place-items-center grid  bg-white/70 backdrop-blur-3xl"}`}
     >
       <div class={`${"flex relative"}`}>
         <div class={`${" place-items-center   hidden lg:flex gap-2"}`}>
@@ -50,7 +54,7 @@ export default component$((props: any) => {
       </div>
       <div>
         <button
-          class={`${"w-[100px]  place-items-center hidden lg:grid  h-[44px] "}${"shadow-inner shadow-3xl shadow-blue-700 hover:shadow-blue-400 duration-500 rounded-full bg-blue-900/5"}${"select-none"}`}
+          class={`${"w-[100px]  text-black font-bold hover:text-white hover:bg-black place-items-center hidden lg:grid  h-[44px] "}${"shadow-inner shadow-3xl shadow-blue-700 hover:shadow-blue-400 duration-500 rounded-full bg-blue-900/5"}${"select-none"}`}
         >
           {props.Join?.map((Join: TJoin) => (
             <Link key={Join.id} href={Join.link}>
