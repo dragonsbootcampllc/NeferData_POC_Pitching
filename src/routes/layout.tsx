@@ -13,36 +13,31 @@ export default component$(() => {
   const nav_links: Tnav_links[] = [
     {
       id: 1,
-      name: "Tracks",
-      link: "/tracks",
+      name: "Home",
+      link: "/",
     },
     {
       id: 2,
-      name: "Talents",
-      link: "/talents",
+      name: "Services",
+      link: "/Services",
     },
     {
       id: 3,
-      name: "Blog",
-      link: "/blog",
+      name: "Pricing",
+      link: "/Pricing",
     },
     {
       id: 4,
-      name: "Board",
-      link: "/board",
-    },
-    {
-      id: 5,
-      name: "Contact",
-      link: "/contact",
+      name: "Marketplace",
+      link: "/Marketplace",
     },
   ];
 
   const Join: TJoin[] = [
     {
       id: 1,
-      name: "Join Us",
-      link: "/join",
+      name: "Login",
+      link: "/Login",
     },
   ];
   return (

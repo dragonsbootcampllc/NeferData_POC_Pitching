@@ -38,13 +38,13 @@
 
 
 :root {
-  --qwik-dark-blue: #006ce9;
-  --qwik-light-blue: #18b6f6;
+  --qwik-dark-blue: #1a78e6;
+  --qwik-light-blue: #1a78e6;
   --qwik-light-purple: #ac7ff4;
-  --qwik-dark-purple: #030014;
+  --qwik-dark-purple:linear-gradient(rgb(232, 238, 246) 50%, rgb(227, 227, 229) 100%);
   --qwik-dirty-black: #1d2033;
   --qwik-dark-background: #151934;
-  --qwik-dark-text: #ffffff;
+  --qwik-dark-text: #000000;
 }
 
 html {

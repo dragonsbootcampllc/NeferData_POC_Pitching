@@ -8,7 +8,7 @@ export default component$(() => {
   const News: TNews = {
     id: 1,
     date: "2020-01-01",
-    content: "Our AI integration just landed💯",
+    content: "Our AI Email Assistant📧 ",
     link: "/blog/news",
   };
 
@@ -20,21 +20,21 @@ export default component$(() => {
         <div>
           <Link
             href={News.link}
-            class="flex active:scale-95 duration-200  gap-1 text-md bg-purple-400/10 shadow-gray-200/20 shadow-inner px-2 rounded-full min-w-[30px]"
+            class="flex active:scale-95 duration-200  gap-1 text-md text-cyan-50 bg-blue-600 shadow-gray-200/20 shadow-inner px-2 rounded-full min-w-[30px]"
           >
             <div class="grid place-content-center ">
               <Image
                 style={{ fontFamily: "interV" }}
-                src="../../../../public/SVG/stars.svg"
+                src="/SVG/stars.svg"
                 alt="f"
                 width={30}
                 height={30}
               />
             </div>
-            <span class="text-purple-300 grid place-content-center font-bold">
+            <span class="text-cyan-50 grid place-content-center font-bold">
               News:{" "}
             </span>
-            <span class="text-purple-400/70 hover:underline duration-300  grid place-content-center">
+            <span class="text-cyan-50/70 hover:underline duration-300  grid place-content-center">
               {News.content}
             </span>
           </Link>
@@ -42,30 +42,38 @@ export default component$(() => {
       </div>
 
       <div class=" ">
-        <div
-          style={{ fontFamily: "interV" }}
-          class="text-7xl max-w-4xl text-center   z-10 flex justify-center m-auto relative  mb-3 text-gray-200  font-semibold	"
-        >
-          Boost Your Experiences in only 6 Months
+        <div class="lg:text-7xl px-4 text-5xl max-w-4xl text-center capitalize  z-10 flex justify-center m-auto relative  mb-3 text-gray-900  font-semibold	">
+          Guiding businesses to the right SaaS decisions
         </div>
         <p
           style={{ fontFamily: "interV" }}
-          class="text-lg flex pt-6 relative z-10 text-purple-300/50 justify-center m-auto"
+          class="text-lg flex pt-6 px-4 text-center relative z-10 text-gray-800 font-bold justify-center m-auto"
         >
-          Never miss a note, idea or connection.
+          with data-based tools that cut through the noise for faster outcomes
         </p>
-      </div>
+        <div class={"flex gap-4 justify-center w-full p-12"}>
+          <div
+            class={
+              "h-[50px] w-[200px] bg-blue-600 grid place-items-center rounded-md cursor-pointer select-none" +
+              " hover:shadow-2xl hover:opacity-90 duration-300" +
+              " active:scale-95 duration-200" +
+              " text-white font-bold te"
+            }
+          >
+            Discover Products
+          </div>
 
-      <div class="max-w-[1400px] sm:mt-10  md:mt-3 lg:-mt-20  relative  m-auto flex justify-center">
-        <Image
-          style={{ fontFamily: "interV" }}
-          class={`${"absolute z-50 top-12 filter "} ${"drag_3d_boubce"}`}
-          src={"/Identity/Images/drag_3d_color.png"}
-          alt="Header Image"
-          width={1500}
-          height={1500}
-        />
-        <video autoPlay loop muted src="/Hero/q-c3d7becf.webm" />
+          <div
+            class={
+              "h-[50px] w-[200px] border-4 border-black grid place-items-center rounded-md cursor-pointer select-none" +
+              " hover:shadow-2xl  duration-300" +
+              " active:scale-95 duration-200" +
+              " text-black font-bold hover:text-white hover:bg-black"
+            }
+          >
+            Free Email Assistant
+          </div>
+        </div>
       </div>
     </div>
   );
